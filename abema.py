@@ -1,7 +1,7 @@
 from urllib import request
 from bs4 import BeautifulSoup, element
 
-url = "https://abema.tv/"
+url = "https://abema.tv/timetable"
 
 open = request.urlopen(url)
 
