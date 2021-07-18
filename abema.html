@@ -1,0 +1,545 @@
+<body>
+  <div id="main">
+    <div>
+      <div class="c-common-HeaderContainer-header">
+        <header>
+          <nav class="com-application-Header">
+            <ul class="com-application-Header__left">
+              <li class="com-application-Header__menu-wrapper"><button class="com-m-HeaderMenu" type="button"><span
+                    class="com-m-HeaderMenu__icon"><svg aria-label="メニュー" class="com-a-Symbol" focusable="false"
+                      height="100%" role="img" width="100%">
+                      <use xlink:href="/images/icons/hamburger.svg?version=20200413#svg-body"></use>
+                    </svg></span></button></li>
+              <li class="com-application-Header__logo"><a class="com-a-Link com-a-Link--block" href="/">
+                  <div class="com-application-LogoLink__symbol"><svg aria-label="アベマ" class="com-a-Symbol"
+                      focusable="false" height="100%" role="img" width="100%">
+                      <use xlink:href="/images/icons/logo.svg?version=20200413#svg-body"></use>
+                    </svg></div>
+                </a></li>
+            </ul>
+            <div class="com-application-Header__right">
+              <form action="/search" class="com-search-SearchForm" method="get">
+                <div class="com-InputText com-InputText--search"><input autocomplete="off"
+                    class="com-InputText__input com-InputText__input--dark com-InputText__input--search com-InputText__input--with-icon"
+                    name="q" placeholder="タイトル・出演者を検索" type="search" /><span class="com-InputText__icon"><svg
+                      aria-label="" class="com-a-Symbol" focusable="false" height="100%" role="img" width="100%">
+                      <use xlink:href="/images/icons/search.svg?version=20200413#svg-body"></use>
+                    </svg></span></div>
+                <div class="com-search-SearchForm__suggest-list"></div>
+              </form>
+            </div>
+          </nav>
+        </header>
+      </div>
+      <div class="c-application-DesktopAppContainer__content-container">
+        <div class="c-application-SideNavigation">
+          <nav class="c-application-SideNavigation__wrapper">
+            <ul class="com-application-LegacySideNavigationMainList">
+              <li class="com-application-SideNavigationItem">
+                <div class="com-application-CollapsibleWrapper">
+                  <div class="com-application-CollapsibleWrapper__inner"><a class="com-a-Link com-a-Link--block"
+                      href="/">
+                      <div
+                        class="com-application-SideNavigationItemContent com-application-SideNavigationItemContent--selected">
+                        <div class="com-application-SideNavigationItemContent__icon"><svg aria-label=""
+                            class="com-a-Symbol" focusable="false" height="100%" role="img" width="100%">
+                            <use xlink:href="/images/icons/tv.svg?version=20200413#svg-body"></use>
+                          </svg></div>
+                        <div class="com-application-SideNavigationItemContent__text">テレビ</div>
+                      </div>
+                    </a></div>
+                </div>
+              </li>
+              <li class="com-application-SideNavigationItem">
+                <div class="com-application-CollapsibleWrapper">
+                  <div class="com-application-CollapsibleWrapper__inner"><a class="com-a-Link com-a-Link--block"
+                      href="/timetable">
+                      <div class="com-application-SideNavigationItemContent">
+                        <div class="com-application-SideNavigationItemContent__icon"><svg aria-label=""
+                            class="com-a-Symbol" focusable="false" height="100%" role="img" width="100%">
+                            <use xlink:href="/images/icons/program.svg?version=20200413#svg-body"></use>
+                          </svg></div>
+                        <div class="com-application-SideNavigationItemContent__text">番組表</div>
+                      </div>
+                    </a></div>
+                </div>
+              </li>
+              <li class="com-application-LegacySideNavigationMainList__horizontal-line"></li>
+              <li class="com-application-SideNavigationItem">
+                <div class="com-application-CollapsibleWrapper">
+                  <div class="com-application-CollapsibleWrapper__inner"><a class="com-a-Link com-a-Link--block"
+                      href="/store">
+                      <div class="com-application-SideNavigationItemContent">
+                        <div class="com-application-SideNavigationItemContent__icon"><svg aria-label=""
+                            class="com-a-Symbol" focusable="false" height="100%" role="img" width="100%">
+                            <use xlink:href="/images/icons/store.svg?version=20200413#svg-body"></use>
+                          </svg></div>
+                        <div class="com-application-SideNavigationItemContent__text">ストア</div>
+                      </div>
+                    </a></div>
+                </div>
+              </li>
+              <li class="">
+                <div class="com-application-CollapsibleWrapper">
+                  <div class="com-application-CollapsibleWrapper__inner"><span
+                      class="com-application-VideoTopNavigation__inner"><a class="com-a-Link com-a-Link--block"
+                        href="/video">
+                        <div class="com-application-SideNavigationItemContent">
+                          <div class="com-application-SideNavigationItemContent__icon"><svg aria-label=""
+                              class="com-a-Symbol" focusable="false" height="100%" role="img" width="100%">
+                              <use xlink:href="/images/icons/video.svg?version=20200413#svg-body"></use>
+                            </svg></div>
+                          <div class="com-application-SideNavigationItemContent__text">ビデオ</div>
+                        </div>
+                      </a></span>
+                    <div class="com-application-VideoTopNavigation__notification-wrapper" style="top:0">
+                      <div class="com-application-SideNavigationNotificationTips"></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="com-application-CollapsibleWrapper">
+                  <div class="com-application-CollapsibleWrapper__inner">
+                    <div class="com-application-CollapsibleGenreList" style="height:138px;transition-duration:0s">
+                      <ul>
+                        <li class="com-application-SideNavigationItem"><a class="com-a-Link com-a-Link--block"
+                            href="/video/genre/newarrival">
+                            <div class="com-application-SideNavigationItemContent">
+                              <div class="com-application-SideNavigationItemContent__icon"></div>
+                              <div class="com-application-SideNavigationItemContent__text">新着</div>
+                            </div>
+                          </a></li>
+                        <li class="com-application-SideNavigationItem"><a class="com-a-Link com-a-Link--block"
+                            href="/video/genre/reality">
+                            <div class="com-application-SideNavigationItemContent">
+                              <div class="com-application-SideNavigationItemContent__icon"></div>
+                              <div class="com-application-SideNavigationItemContent__text">恋
+                                愛番組</div>
+                            </div>
+                          </a></li>
+                        <li class="com-application-SideNavigationItem"><a class="com-a-Link com-a-Link--block"
+                            href="/video/genre/animation">
+                            <div class="com-application-SideNavigationItemContent">
+                              <div class="com-application-SideNavigationItemContent__icon"></div>
+                              <div class="com-application-SideNavigationItemContent__text">ア
+                                ニメ</div>
+                            </div>
+                          </a></li>
+                      </ul>
+                      <ul class="com-application-CollapsibleGenreList__collapsible-list--hidden">
+                        <li class="com-application-SideNavigationItem"><a class="com-a-Link com-a-Link--block"
+                            href="/video/genre/variety">
+                            <div class="com-application-SideNavigationItemContent">
+                              <div class="com-application-SideNavigationItemContent__icon"></div>
+                              <div class="com-application-SideNavigationItemContent__text">バラエティ</div>
+                            </div>
+                          </a></li>
+                        <li class="com-application-SideNavigationItem"><a class="com-a-Link com-a-Link--block"
+                            href="/video/genre/movie">
+                            <div class="com-application-SideNavigationItemContent">
+                              <div class="com-application-SideNavigationItemContent__icon"></div>
+                              <div class="com-application-SideNavigationItemContent__text">映画</div>
+                            </div>
+                          </a></li>
+                        <li class="com-application-SideNavigationItem"><a class="com-a-Link com-a-Link--block"
+                            href="/video/genre/drama">
+                            <div class="com-application-SideNavigationItemContent">
+                              <div class="com-application-SideNavigationItemContent__icon"></div>
+                              <div class="com-application-SideNavigationItemContent__text">ドラマ</div>
+                            </div>
+                          </a></li>
+                        <li class="com-application-SideNavigationItem"><a class="com-a-Link com-a-Link--block"
+                            href="/video/genre/asia">
+                            <div class="com-application-SideNavigationItemContent">
+                              <div class="com-application-SideNavigationItemContent__icon"></div>
+                              <div class="com-application-SideNavigationItemContent__text">韓流・華流</div>
+                            </div>
+                          </a></li>
+                        <li class="com-application-SideNavigationItem"><a class="com-a-Link com-a-Link--block"
+                            href="/video/genre/kpop">
+                            <div class="com-application-SideNavigationItemContent">
+                              <div class="com-application-SideNavigationItemContent__icon"></div>
+                              <div class="com-application-SideNavigationItemContent__text">K-POP</div>
+                            </div>
+                          </a></li>
+                        <li class="com-application-SideNavigationItem"><a class="com-a-Link com-a-Link--block"
+                            href="/video/genre/mahjong">
+                            <div class="com-application-SideNavigationItemContent">
+                              <div class="com-application-SideNavigationItemContent__icon"></div>
+                              <div class="com-application-SideNavigationItemContent__text">麻雀</div>
+                            </div>
+                          </a></li>
+                        <li class="com-application-SideNavigationItem"><a class="com-a-Link com-a-Link--block"
+                            href="/video/genre/fightingsports">
+                            <div class="com-application-SideNavigationItemContent">
+                              <div class="com-application-SideNavigationItemContent__icon"></div>
+                              <div class="com-application-SideNavigationItemContent__text">格闘</div>
+                            </div>
+                          </a></li>
+                        <li class="com-application-SideNavigationItem"><a class="com-a-Link com-a-Link--block"
+                            href="/video/genre/shogi">
+                            <div class="com-application-SideNavigationItemContent">
+                              <div class="com-application-SideNavigationItemContent__icon"></div>
+                              <div class="com-application-SideNavigationItemContent__text">将棋</div>
+                            </div>
+                          </a></li>
+                        <li class="com-application-SideNavigationItem"><a class="com-a-Link com-a-Link--block"
+                            href="/video/genre/news">
+                            <div class="com-application-SideNavigationItemContent">
+                              <div class="com-application-SideNavigationItemContent__icon"></div>
+                              <div class="com-application-SideNavigationItemContent__text">ニュース</div>
+                            </div>
+                          </a></li>
+                        <li class="com-application-SideNavigationItem"><a class="com-a-Link com-a-Link--block"
+                            href="/video/genre/tvcatchup">
+                            <div class="com-application-SideNavigationItemContent">
+                              <div class="com-application-SideNavigationItemContent__icon"></div>
+                              <div class="com-application-SideNavigationItemContent__text">テレ朝見逃し</div>
+                            </div>
+                          </a></li>
+                        <li class="com-application-SideNavigationItem"><a class="com-a-Link com-a-Link--block"
+                            href="/video/genre/sports">
+                            <div class="com-application-SideNavigationItemContent">
+                              <div class="com-application-SideNavigationItemContent__icon"></div>
+                              <div class="com-application-SideNavigationItemContent__text">スポーツ</div>
+                            </div>
+                          </a></li>
+                        <li class="com-application-SideNavigationItem"><a class="com-a-Link com-a-Link--block"
+                            href="/video/genre/documentary">
+                            <div class="com-application-SideNavigationItemContent">
+                              <div class="com-application-SideNavigationItemContent__icon"></div>
+                              <div class="com-application-SideNavigationItemContent__text">ドキュメンタリー</div>
+                            </div>
+                          </a></li>
+                        <li class="com-application-SideNavigationItem"><a class="com-a-Link com-a-Link--block"
+                            href="/video/genre/hiphop">
+                            <div class="com-application-SideNavigationItemContent">
+                              <div class="com-application-SideNavigationItemContent__icon"></div>
+                              <div class="com-application-SideNavigationItemContent__text">HIPHOP</div>
+                            </div>
+                          </a></li>
+                        <li class="com-application-SideNavigationItem"><a class="com-a-Link com-a-Link--block"
+                            href="/video/genre/fishing">
+                            <div class="com-application-SideNavigationItemContent">
+                              <div class="com-application-SideNavigationItemContent__icon"></div>
+                              <div class="com-application-SideNavigationItemContent__text">釣り</div>
+                            </div>
+                          </a></li>
+                        <li class="com-application-SideNavigationItem"><a class="com-a-Link com-a-Link--block"
+                            href="/video/genre/music">
+                            <div class="com-application-SideNavigationItemContent">
+                              <div class="com-application-SideNavigationItemContent__icon"></div>
+                              <div class="com-application-SideNavigationItemContent__text">音楽</div>
+                            </div>
+                          </a></li>
+                      </ul>
+                    </div>
+                    <ul>
+                      <li><button class="com-application-ToggleCollapsedButton__button" type="button">
+                          <div
+                            class="com-application-SideNavigationItemContent com-application-SideNavigationItemContent--with-right-icon">
+                            <div class="com-application-SideNavigationItemContent__icon"></div>
+                            <div class="com-application-SideNavigationItemContent__text">もっとみる</div>
+                            <div class="com-application-SideNavigationItemContent__right-icon"><span
+                                class="com-application-ToggleCollapsedButton__toggle-icon-wrapper"><svg aria-label=""
+                                  class="com-application-ToggleCollapsedButton__toggle-icon com-a-LegacySymbol"
+                                  height="10" role="img" width="16">
+                                  <use xlink:href="/images/icons/arrow_down.svg#svg-body"></use>
+                                </svg></span></div>
+                          </div>
+                        </button></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="c-application-SideNavigation__footer">
+              <li class="com-application-SideNavigationItem">
+                <div class="com-application-CollapsibleWrapper">
+                  <div class="com-application-CollapsibleWrapper__inner"><a class="com-a-Link com-a-Link--block"
+                      href="/my/lists">
+                      <div class="com-application-SideNavigationItemContent">
+                        <div class="com-application-SideNavigationItemContent__icon"><span
+                            class="com-application-MylistNavigation__icon"><svg aria-label="" class="com-a-Symbol"
+                              focusable="false" height="100%" role="img" width="100%">
+                              <use xlink:href="/images/icons/mylist.svg?version=20200413#svg-body"></use>
+                            </svg></span></div>
+                        <div class="com-application-SideNavigationItemContent__text">マイリスト</div>
+                      </div>
+                    </a>
+                    <div class="com-application-MylistNavigation__notification-wrapper">
+                      <div class="com-application-SideNavigationNotificationTips"></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="com-application-MypageMenu">
+                <div class="com-application-CollapsibleWrapper">
+                  <div class="com-application-CollapsibleWrapper__inner"><button
+                      class="com-application-MypageMenu__toggle-button" type="button">
+                      <div
+                        class="com-application-SideNavigationItemContent com-application-SideNavigationItemContent--with-right-icon">
+                        <div class="com-application-SideNavigationItemContent__icon"><span
+                            class="com-application-MypageMenu__icon"><svg aria-label="" class="com-a-Symbol"
+                              focusable="false" height="100%" role="img" width="100%">
+                              <use xlink:href="/images/icons/settings.svg?version=20200413#svg-body"></use>
+                            </svg></span></div>
+                        <div class="com-application-SideNavigationItemContent__text">設定</div>
+                        <div class="com-application-SideNavigationItemContent__right-icon"><span
+                            class="com-application-MypageMenu__dropdown-icon-wrapper"><svg aria-label=""
+                              class="com-application-MypageMenu__dropdown-icon com-a-LegacySymbol" height="5" role="img"
+                              width="8">
+                              <use xlink:href="/images/icons/dropdown.svg#svg-body"></use>
+                            </svg></span></div>
+                      </div>
+                    </button></div>
+                </div>
+                <div class="com-application-MypageMenu__notification-wrapper">
+                  <div class="com-application-SideNavigationNotificationTips"></div>
+                </div>
+                <ul class="com-application-MypageMenu__menu">
+                  <li class="com-application-SideNavigationSubMenuItem"><a class="com-a-Link com-a-Link--block"
+                      href="/supported-device">
+                      <div class="com-application-SideNavigationSubMenuItem__inner"><span
+                          class="com-application-SideNavigationSubMenuItem__text">対応デ
+                          バイス</span></div>
+                    </a></li>
+                  <li class="com-application-SideNavigationSubMenuItem"><a class="com-a-Link com-a-Link--block"
+                      href="/account">
+                      <div class="com-application-SideNavigationSubMenuItem__inner"><span
+                          class="com-application-SideNavigationSubMenuItem__text">アカウント管理</span></div>
+                    </a></li>
+                  <li class="com-application-SideNavigationSubMenuItem"><a class="com-a-Link com-a-Link--block"
+                      href="/coin/management">
+                      <div class="com-application-SideNavigationSubMenuItem__inner"><span
+                          class="com-application-SideNavigationSubMenuItem__text">ABEMAコイン</span></div>
+                    </a></li>
+                  <li class="com-application-SideNavigationSubMenuItem"><a class="com-a-Link com-a-Link--block"
+                      href="/coupon-code/registration">
+                      <div class="com-application-SideNavigationSubMenuItem__inner"><span
+                          class="com-application-SideNavigationSubMenuItem__text">
+                          クーポンコード</span></div>
+                    </a></li>
+                  <li class="com-application-SideNavigationSubMenuItem"><a class="com-a-Link com-a-Link--block"
+                      href="https://help.abema.tv/hc/ja/categories/360000917412">
+                      <div class="com-application-SideNavigationSubMenuItem__inner"><span
+                          class="com-application-SideNavigationSubMenuItem__text">お知らせ</span></div>
+                    </a></li>
+                  <li class="com-application-SideNavigationSubMenuItem"><a class="com-a-Link com-a-Link--block"
+                      href="/gifts">
+                      <div class="com-application-SideNavigationSubMenuItem__inner"><span
+                          class="com-application-SideNavigationSubMenuItem__text">ギフトボックス</span></div>
+                    </a></li>
+                  <li class="com-application-SideNavigationSubMenuItem"><a class="com-a-Link com-a-Link--block"
+                      href="/mailnotify">
+                      <div class="com-application-SideNavigationSubMenuItem__inner"><span
+                          class="com-application-SideNavigationSubMenuItem__text">メール通知の設定</span></div>
+                    </a></li>
+                  <li class="com-application-SideNavigationSubMenuItem"><a class="com-a-Link com-a-Link--block"
+                      href="https://help.abema.tv/hc/ja">
+                      <div class="com-application-SideNavigationSubMenuItem__inner"><span
+                          class="com-application-SideNavigationSubMenuItem__text">ヘルプ / お問い
+                          合わせ</span></div>
+                    </a></li>
+                </ul>
+              </li>
+              <li class="com-application-SideNavigationItem">
+                <div class="com-application-CollapsibleWrapper">
+                  <div class="com-application-CollapsibleWrapper__inner"><a class="com-a-Link com-a-Link--block"
+                      href="/about/premium">
+                      <div class="com-application-SideNavigationItemContent">
+                        <div class="com-application-SideNavigationItemContent__icon"><span
+                            class="c-application-SideNavigation__footer-icon"><svg aria-label="" class="com-a-Symbol"
+                              focusable="false" height="100%" role="img" width="100%">
+                              <use xlink:href="/images/icons/plan.svg?version=20200413#svg-body"></use>
+                            </svg></span></div>
+                        <div class="com-application-SideNavigationItemContent__text">視聴プラン</div>
+                      </div>
+                      <div class="com-application-SideNavigationItemContent__sub-text">−</div>
+                    </a></div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="c-application-DesktopAppContainer__content">
+          <main>
+            <div class="com-a-ResponsiveMainContent">
+              <div class="com-a-ResponsiveMainContent__inner">
+                <div>
+                  <div class="com-tv-top-ChannelCardGridPlaceholder">
+                    <div class="com-tv-top-ChannelCardPlaceholder">
+                      <div class="com-tv-top-ChannelCardPlaceholder__inner"></div>
+                    </div>
+                    <div class="com-tv-top-ChannelCardPlaceholder">
+                      <div class="com-tv-top-ChannelCardPlaceholder__inner"></div>
+                    </div>
+                    <div class="com-tv-top-ChannelCardPlaceholder">
+                      <div class="com-tv-top-ChannelCardPlaceholder__inner"></div>
+                    </div>
+                    <div class="com-tv-top-ChannelCardPlaceholder">
+                      <div class="com-tv-top-ChannelCardPlaceholder__inner"></div>
+                    </div>
+                    <div class="com-tv-top-ChannelCardPlaceholder">
+                      <div class="com-tv-top-ChannelCardPlaceholder__inner"></div>
+                    </div>
+                    <div class="com-tv-top-ChannelCardPlaceholder">
+                      <div class="com-tv-top-ChannelCardPlaceholder__inner"></div>
+                    </div>
+                    <div class="com-tv-top-ChannelCardPlaceholder">
+                      <div class="com-tv-top-ChannelCardPlaceholder__inner"></div>
+                    </div>
+                    <div class="com-tv-top-ChannelCardPlaceholder">
+                      <div class="com-tv-top-ChannelCardPlaceholder__inner"></div>
+                    </div>
+                    <div class="com-tv-top-ChannelCardPlaceholder">
+                      <div class="com-tv-top-ChannelCardPlaceholder__inner"></div>
+                    </div>
+                    <div class="com-tv-top-ChannelCardPlaceholder">
+                      <div class="com-tv-top-ChannelCardPlaceholder__inner"></div>
+                    </div>
+                    <div class="com-tv-top-ChannelCardPlaceholder">
+                      <div class="com-tv-top-ChannelCardPlaceholder__inner"></div>
+                    </div>
+                    <div class="com-tv-top-ChannelCardPlaceholder">
+                      <div class="com-tv-top-ChannelCardPlaceholder__inner"></div>
+                    </div>
+                    <div class="com-tv-top-ChannelCardPlaceholder">
+                      <div class="com-tv-top-ChannelCardPlaceholder__inner"></div>
+                    </div>
+                    <div class="com-tv-top-ChannelCardPlaceholder">
+                      <div class="com-tv-top-ChannelCardPlaceholder__inner"></div>
+                    </div>
+                    <div class="com-tv-top-ChannelCardPlaceholder">
+                      <div class="com-tv-top-ChannelCardPlaceholder__inner"></div>
+                    </div>
+                    <div class="com-tv-top-ChannelCardPlaceholder">
+                      <div class="com-tv-top-ChannelCardPlaceholder__inner"></div>
+                    </div>
+                    <div class="com-tv-top-ChannelCardPlaceholder">
+                      <div class="com-tv-top-ChannelCardPlaceholder__inner"></div>
+                    </div>
+                    <div class="com-tv-top-ChannelCardPlaceholder">
+                      <div class="com-tv-top-ChannelCardPlaceholder__inner"></div>
+                    </div>
+                    <div class="com-tv-top-ChannelCardPlaceholder">
+                      <div class="com-tv-top-ChannelCardPlaceholder__inner"></div>
+                    </div>
+                    <div class="com-tv-top-ChannelCardPlaceholder">
+                      <div class="com-tv-top-ChannelCardPlaceholder__inner"></div>
+                    </div>
+                    <div class="com-tv-top-ChannelCardPlaceholder">
+                      <div class="com-tv-top-ChannelCardPlaceholder__inner"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          <div class="c-application-FooterContainer">
+            <footer class="com-o-Footer">
+              <div class="com-o-Footer__inner" data-nosnippet="true">
+                <div class="com-o-Footer__left-side">
+                  <ul class="com-o-Footer__list">
+                    <li class="com-o-Footer__list-item"><a class="com-a-Link com-a-Link--block" href="/about/terms"
+                        rel="noopener noreferrer" target="_blank"><span class="com-o-Footer__link_inner"><span
+                            class="com-o-Footer__link-text">利用規約</span><span class="com-o-Footer__link-icon"><svg
+                              aria-label="" focusable="false" height="100%" role="img" width="100%">
+                              <use xlink:href="/images/icons/action/external_link.svg?v=5f9deabbe540897c2b55#svg-body">
+                              </use>
+                            </svg></span></span></a></li>
+                    <li class="com-o-Footer__list-item"><a class="com-a-Link com-a-Link--block"
+                        href="/about/privacy-policy" rel="noopener noreferrer" target="_blank"><span
+                          class="com-o-Footer__link_inner"><span class="com-o-Footer__link-text">プライバシーポリシー</span><span
+                            class="com-o-Footer__link-icon"><svg aria-label="" focusable="false" height="100%"
+                              role="img" width="100%">
+                              <use xlink:href="/images/icons/action/external_link.svg?v=5f9deabbe540897c2b55#svg-body">
+                              </use>
+                            </svg></span></span></a></li>
+                    <li class="com-o-Footer__list-item"><a class="com-a-Link com-a-Link--block"
+                        href="/about/subscription" rel="noopener noreferrer" target="_blank"><span
+                          class="com-o-Footer__link_inner"><span
+                            class="com-o-Footer__link-text">月額サービスガイドライン</span><span
+                            class="com-o-Footer__link-icon"><svg aria-label="" focusable="false" height="100%"
+                              role="img" width="100%">
+                              <use xlink:href="/images/icons/action/external_link.svg?v=5f9deabbe540897c2b55#svg-body">
+                              </use>
+                            </svg></span></span></a></li>
+                    <li class="com-o-Footer__list-item"><a class="com-a-Link com-a-Link--block" href="/about/asct"
+                        rel="noopener noreferrer" target="_blank"><span class="com-o-Footer__link_inner"><span
+                            class="com-o-Footer__link-text">特定商取引法
+                            に基づく表示</span><span class="com-o-Footer__link-icon"><svg aria-label="" focusable="false"
+                              height="100%" role="img" width="100%">
+                              <use xlink:href="/images/icons/action/external_link.svg?v=5f9deabbe540897c2b55#svg-body">
+                              </use>
+                            </svg></span></span></a></li>
+                    <li class="com-o-Footer__list-item"><a class="com-a-Link com-a-Link--block" href="/about/currency"
+                        rel="noopener noreferrer" target="_blank"><span class="com-o-Footer__link_inner"><span
+                            class="com-o-Footer__link-text">サービス内通貨ガイド
+                            ライン</span><span class="com-o-Footer__link-icon"><svg aria-label="" focusable="false"
+                              height="100%" role="img" width="100%">
+                              <use xlink:href="/images/icons/action/external_link.svg?v=5f9deabbe540897c2b55#svg-body">
+                              </use>
+                            </svg></span></span></a></li>
+                    <li class="com-o-Footer__list-item"><a class="com-a-Link com-a-Link--block" href="/about/settlement"
+                        rel="noopener noreferrer" target="_blank"><span class="com-o-Footer__link_inner"><span
+                            class="com-o-Footer__link-text">資金決済法に基づく表示</span><span class="com-o-Footer__link-icon"><svg
+                              aria-label="" focusable="false" height="100%" role="img" width="100%">
+                              <use xlink:href="/images/icons/action/external_link.svg?v=5f9deabbe540897c2b55#svg-body">
+                              </use>
+                            </svg></span></span></a></li>
+                    <li class="com-o-Footer__list-item"><a class="com-a-Link com-a-Link--block"
+                        href="/about/payperview-terms" rel="noopener noreferrer" target="_blank"><span
+                          class="com-o-Footer__link_inner"><span class="com-o-Footer__link-text">ペイパービュー及びレンタルサ
+                            ービスガイドライン</span><span class="com-o-Footer__link-icon"><svg aria-label="" focusable="false"
+                              height="100%" role="img" width="100%">
+                              <use xlink:href="/images/icons/action/external_link.svg?v=5f9deabbe540897c2b55#svg-body">
+                              </use>
+                            </svg></span></span></a></li>
+                    <li class="com-o-Footer__list-item"><a class="com-a-Link com-a-Link--block"
+                        href="https://abematv.co.jp/pages/396088/company" rel="noopener noreferrer"
+                        target="_blank"><span class="com-o-Footer__link_inner"><span
+                            class="com-o-Footer__link-text">運営会社</span><span class="com-o-Footer__link-icon"><svg
+                              aria-label="" focusable="false" height="100%" role="img" width="100%">
+                              <use xlink:href="/images/icons/action/external_link.svg?v=5f9deabbe540897c2b55#svg-body">
+                              </use>
+                            </svg></span></span></a></li>
+                    <li class="com-o-Footer__list-item"><a class="com-a-Link com-a-Link--block"
+                        href="/ranking/reservation"><span class="com-o-Footer__link_inner"><span
+                            class="com-o-Footer__link-text">ランキング</span></span></a></li>
+                    <li class="com-o-Footer__list-item"><a class="com-a-Link com-a-Link--block"
+                        href="https://times.abema.tv" rel="noopener noreferrer" target="_blank"><span
+                          class="com-o-Footer__link_inner"><span
+                            class="com-o-Footer__link-text com-o-Footer__link-text--upper-case">ABEMA TIMES</span><span
+                            class="com-o-Footer__link-icon"><svg aria-label="" focusable="false" height="100%"
+                              role="img" width="100%">
+                              <use xlink:href="/images/icons/action/external_link.svg?v=5f9deabbe540897c2b55#svg-body">
+                              </use>
+                            </svg></span></span></a></li>
+                  </ul><span><small class="com-o-Footer__copyright">©AbemaTV, Inc.</small></span>
+                </div>
+                <div class="com-o-Footer__right-side"><span></span>
+                  <script
+                    type="application/ld+json">{"@context":"http://schema.org","@type":"ImageObject","url":"/images/misc/license.png","caption":"JASRAC 許諾番号 : 9016941001Y45038, 9016941005Y45038, 9016941006Y31016/NexTone 許諾番号 : ID000000424, ID000000425, ID000005370"}</script>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="announcer" style="position:absolute;height:1px;overflow:hidden"></div><noscript><iframe aria-hidden="true"
+      height="0" src="//www.googletagmanager.com/ns.html?id=GTM-TDKDXJ" style="display:none;visibility:hidden"
+      width="0"></iframe></noscript>
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          Date.now(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TDKDXJ');</script>
+  <link href="/registry.04579af75591adacb74f5.css" rel="stylesheet" />
+</body>
